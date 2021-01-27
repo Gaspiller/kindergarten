@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/home.css" />
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/wangEditor.js"></script>
+    <title>发表文章</title>
+</head>
+
+<body>
+    <div class="egc-top">
+        <div class="nav-cent">
+            <div class="top-r">
+                <div class="operate reg">注册<i class="icon-angle-down icon-large"></i>
+                    <div class="sec-version">
+                        <div class="items"><a href="#">教师版</a></div>
+                        <div class="items"><a href="#">学生版</a></div>
+                    </div>
+                </div>
+                <div class="operate">登陆<i class="icon-angle-down icon-large"></i>
+                    <div class="sec-version">
+                        <div class="items"><a href="#">教师版</a></div>
+                        <div class="items"><a href="#">学生版</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-l">您好，欢迎来到金果果幼儿园首页</div>
+            <div class="clear_fix"></div>
+        </div>
+    </div>
+    <div class="navigation">
+        <div class="nav-cent">
+            <ul>
+                <li class="logo"><a href="index.html"></a></li>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="#">礼物兑换</a></li>
+                <li><a href="#">成果展示</a></li>
+                <li><a href="#">文章发表</a></li>
+                <li><a href="#">最新动态</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <h1>
+            <p class="n1">发表文章</p>
+        </h1>
+        <div class="infosbox">
+            <br>
+            <p>
+                <input class="comment_input" id="author" maxlength="50" name="author" required="required" size="25"
+                    tabindex="1" type="text">
+                <label for="author">文章标题</label>
+            </p>
+            <br>
+            <p class="classification">
+                <input name="category" type="radio" value="tec" checked=check>最新动态
+                <input name="category" type="radio" value="no-tec">官方通告
+            </p>
+            <br>
+            <form>
+                <div id="editor" style="margin-left: 12px;margin-right: 12px"></div>
+                <br>
+                <p>
+                    <input id="id_article" name="article" type="hidden" value="1">
+                    <input name="button" type="button" id="button" tabindex="5" value="提交" class="button" />
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <div class="ftWrap">
+        <div class="foot">
+            <div class="cent">
+                <div class="relate">
+                    <div class="items">
+                        <div class="tit"><i class="icon-angle-right"></i>关于我们</div>
+                        <div class="con"> <a href="#">了解我们</a> <a href="#">教师团队</a> <a href="#">联系我们</a> </div>
+                    </div>
+                    <div class="items">
+                        <div class="tit"><i class="icon-angle-right"></i>价值观</div>
+                        <div class="con"> <a href="#">服务理念</a> <a href="#">用户权益</a> <a href="#">供应商职责</a>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="tit"><i class="icon-angle-right"></i>活动</div>
+                        <div class="con"> <a href="#">活动与公告</a><a href="#">社会关注</a>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="tit"><i class="icon-angle-right"></i>合作伙伴</div>
+                        <div class="con"> <a href="#">工作机会</a> <a href="#">第三方合作</a> <a href="#">商家入驻</a>
+                        </div>
+                    </div>
+                    <div class="items last">
+                        <div class="tel">
+                            <h1>3828189</h1>
+                            <p>周一至周日 8:00-18:00</p>
+                            <a href="#" class="kf"><i class="kf-icon"></i>在线客服</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="cent">
+                <div class="copy-txt">
+                    <div class="copy-menu"><a href="#">问题反馈</a><a href="#">帮助中心</a><a href="#">官方电话</a><a
+                            href="#">官方微信</a></div>
+                    <p>Copyright © 2015 - 2016 EGC. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var E = window.wangEditor
+        editor = new E('#editor')
+        editor.create()
+    </script>
+</body>
+
+</html>

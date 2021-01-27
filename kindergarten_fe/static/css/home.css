@@ -1,0 +1,91 @@
+@charset "utf-8";
+/*top*/
+.egc-top{width:100%; background:#333;}
+.egc-top .nav-cent{height:35px; width:1068px; margin:0 auto;}
+.egc-top .nav-cent .top-r{float:right; position:relative;}
+.egc-top .nav-cent .top-l{line-height:35px; color:#b0b0b0;}
+/*导航*/
+.navigation{width:100%; background:#fff;z-index:1000; border-bottom:1px solid #f5f5f5;}
+.navigation .nav-cent{width:1068px; margin:0 auto; height:75px; position:relative;}
+.navigation .nav-cent ul{zoom:1; overflow:hidden;}
+.navigation .nav-cent li{ padding:0 30px; float:left;}
+.navigation .nav-cent li a{color:#333; font-size:16px; height:80px; line-height:80px; display:block;}
+.navigation .nav-cent a:hover{color:#0074b2;}
+.navigation .nav-cent li.logo{padding:0;}
+.navigation .nav-cent li.logo a{background:url(../images/egc-logo.jpg) no-repeat center/auto 100%; width:200px; font-size:0; text-indent:-1000px; margin-right:100px;}
+.egc-top .nav-cent .operate{ position:absolute; right:70px; top:6px; width:95px; text-align:center; background:#424242; font-size:12px; color:#b0b0b0; line-height:23px; padding:0; cursor:pointer; font-size:12px; z-index:10000;}
+.egc-top .nav-cent .operate i{margin-left:5px;}
+.egc-top .nav-cent .operate a{background:#424242; color:#b0b0b0; font-size:12px; line-height:24px; display:block;}
+.egc-top .nav-cent .operate .sec-version{display:none;}
+.egc-top .nav-cent .operate a:hover{background:#333;}
+.egc-top .nav-cent .operate.reg{width:60px; right:0;}
+
+/*首页轮播大图*/
+.flexslider{position:relative;height:670px;overflow:hidden;background:url(../images/bx_loader.gif) 50% no-repeat;}
+.slides{position:relative;z-index:1;}
+.slides li{height:670px; background-size:cover;background-position-y: -239px;}
+.flex-control-nav{position:absolute;bottom:20px;z-index:2;width:100%;text-align:center;}
+.flex-control-nav li{display:inline-block;margin:0 5px;*display:inline;zoom:1;}
+.flex-control-nav a{cursor:pointer;display:inline-block;*display:inline;zoom:1;width:40px;height:11px;margin:1px;overflow:hidden;filter:alpha(opacity=50);opacity:0.5; font-size:0; background:#000;}
+.flex-control-nav .flex-active{background:#0075b3;}
+.flex-direction-nav{ display:none;position:absolute;z-index:3;width:100%;top:45%;}
+.flex-direction-nav li a{position:absolute;top:50%;margin-top:-36px;width:80px;height:80px;text-indent:100%;white-space:nowrap;overflow:hidden;z-index:10; background:url(../images/ico_sliding.png) no-repeat;}
+.flex-direction-nav li a.flex-prev{left:30px;background-position:0 0;}
+.flex-direction-nav li a.flex-prev:hover{background-position:0 -144px;}
+.flex-direction-nav li a.flex-next{right:30px;background-position:0 -72px;}
+.flex-direction-nav li a.flex-next:hover{background-position:0 -216px;}
+.index_focus_info{position:absolute;left:0; top:20%;width:100%; text-align:center;}
+
+/* box */
+.box_logo{width:100%;height:50%;background:url(../images/egc-logo.jpg) no-repeat center/auto 80%;}
+.content{margin: 20px;}
+.content1 p{width: 80%;height:auto;margin: 40px auto;background-color: rgb(168, 116, 218);padding: 10px;border-radius: 10px;box-shadow: 10px 10px 10px rgba(0,0,0,.5);}
+.content2 p{width: 80%;height:auto;margin: auto;background-color: rgb(231, 160, 52);padding: 10px;border-radius: 10px;box-shadow: 10px 10px 10px rgba(0,0,0,.5);}
+.content3{text-align: center;margin: 100px 50px 50px 50px;}
+.content4{margin: auto auto 100px auto;height: 80%;width: 80%;overflow:hidden;}
+.content4 .content5{margin: 0 auto;display: flex; align-items: center; justify-content: center;}
+.content4 ul{clear: both;}
+.content4 ul li{float: left;overflow: hidden;margin: 20px 50px;}
+.content4 ul .pic img{width: 200px;height: 200px;margin: 0 20px; opacity: 0.8;transition: all 0.5s;border-radius: 10px}
+.content4 ul li:hover img{opacity: 1;transform: scale(1.1);}
+
+/*foot*/
+.ftWrap{width:100%; background:#fff; padding:30px 0 20px 0;margin: 20px 0px;}
+.foot{width:1068px; margin:10px auto;}
+.foot .relate{zoom:1; overflow:hidden; margin:0;}
+.foot .items{width:15%; float:left;}
+.foot .items.last{width:25%; zoom:1; overflow:hidden;}
+.foot .items .tit{color:#333; padding:0 0 15px 0; font-size:14px; zoom:1; overflow:hidden;}
+.foot .items .tit i{float:right; margin-right:20px; font-size:14px; display:none;}
+.foot .items .con{padding:0 0 10px 0;}
+.foot .items .con a{display:block; color:#666; padding:10px 0 0 0;}
+.foot .items .con a:hover{color:#0075b3;}
+.foot .items .tel{text-align:center; margin:0; position:relative; border-left:1px solid #ddd; padding-left:30px; height:126px;}
+.foot .items .tel h1{font-size:20px; font-weight:normal; padding:0 0 5px 0; color:#ee7800; font-family:Arial; min-width:128px;}
+.foot .items .tel p{color:#666;}    
+.foot .items .tel a{border:1px solid #ee7800; background:#fff; display:block; width:93px; height:28px; padding-left:25px; text-align:center; margin:15px auto auto auto; font-size:12px; line-height:28px; color:#ee7800; position:relative;}
+.foot .items .tel a i.kf-icon{position:absolute; left:15px; top:5px; width:23px; height:18px; background:url(../images/mb-kf-icon.png) 0 0 no-repeat; }
+.foot .items .tel a:hover{color:#F30; background:#ee7800; color:#fff; transition:background-color 0.5s ease;}
+.foot .items .tel a:hover i.kf-icon{background-position:0 -18px;}
+
+.tel-mb{width:100%; margin:10px 0; display:none; zoom:1; overflow:hidden;}
+.tel-mb span{color:#ee7800; float:left; padding:0 5px 0 0; font-family:Arial, Helvetica, sans-serif; font-size:14px;}
+
+.tel-mb a{float:right;border:1px solid #ee7800; background:#fff; display:block; width:93px; height:28px; padding-left:25px; text-align:center; font-size:12px; line-height:28px; color:#ee7800; position:relative;}
+.tel-mb a i.kf-icon{position:absolute; left:15px; top:5px; width:23px; height:18px; background:url(../images/mb-kf-icon.png) 0 0 no-repeat; }
+.tel-mb a:hover{color:#F30; background:#ee7800; color:#fff; transition:background-color 0.5s ease;}
+.tel-mb a:hover i.kf-icon{background-position:0 -18px;}
+
+
+
+.copyright{margin:20px 0; width:100%; background: #ffffff;;}
+.copyright .cent{width:1068px; margin:0 auto; padding:20px 0;  zoom:1; overflow:hidden; }
+.copyright .copy-txt{float:left; padding-left:66px; background:url(../images/egc-logo.jpg) no-repeat left/auto 150%;}
+.copyright .copy-txt p{color:#999; line-height:14px;}
+.copyright .copy-img{float:right;}
+.copyright .copy-img a{margin-right:20px;}
+.copyright .copy-txt .copy-menu a{color:#666; position:relative; padding:0 9px 0 10px; line-height:22px;}
+.copyright .copy-txt .copy-menu a:first-child{padding:0 9px 0 0;}
+.copyright .copy-txt .copy-menu a:after{width:1px; height:12px; background:#b0b0b0; position:absolute; left:0; top:3px; content:"";}
+.copyright .copy-txt .copy-menu a:first-child:after{display:none;}
+.copyright .copy-txt .copy-menu a:hover{color:#0074b2;}

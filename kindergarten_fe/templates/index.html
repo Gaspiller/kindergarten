@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>金果果幼儿园</title>
+  <link rel="stylesheet" type="text/css" href="../static/css/base.css" />
+  <link rel="stylesheet" type="text/css" href="../static/css/home.css" />
+  <link rel="stylesheet" type="text/css" href="../static/css/font-awesome.css" />
+  <script type="text/javascript" src="../static/js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="../static/js/home_ban.js"></script>
+  <!--导航登陆网页版下拉-->
+  <script type="text/javascript">
+    $(function () {
+      var setTime;
+      $(".egc-top .nav-cent .operate").hover(function () {
+        var _this = $(this);
+        setTime = setTimeout(function () {
+          _this.find(".sec-version").slideDown(200);
+          _this.find("i").removeClass("icon-angle-down").addClass("icon-angle-up");
+        }, 200);
+      }, function () {
+        if (setTime) {
+          clearTimeout(setTime);
+        }
+        $(".egc-top .nav-cent .sec-version").slideUp(200);
+        $(".egc-top .nav-cent .operate i").removeClass("icon-angle-up").addClass("icon-angle-down");
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+  <div class="egc-top">
+    <div class="nav-cent">
+      <div class="top-r">
+        <div class="operate reg">注册<i class="icon-angle-down icon-large"></i>
+          <div class="sec-version">
+            <div class="items"><a href="/register">教师版</a></div>
+            <div class="items"><a href="/register">学生版</a></div>
+          </div>
+        </div>
+        <div class="operate">登陆<i class="icon-angle-down icon-large"></i>
+          <div class="sec-version">
+            <div class="items"><a href="/login">教师版</a></div>
+            <div class="items"><a href="/login">学生版</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="top-l">您好，欢迎来到金果果幼儿园首页</div>
+      <div class="clear_fix"></div>
+    </div>
+  </div>
+  <div class="navigation">
+    <div class="nav-cent">
+      <ul>
+        <li class="logo"><a href="index.html"></a></li>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="#">礼物兑换</a></li>
+        <li><a href="#">成果展示</a></li>
+        <li><a href="#">文章发表</a></li>
+        <li><a href="#">最新动态</a></li>
+        <li><a href="#">关于我们</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 轮播图 -->
+  <div class="flexslider">
+    <ul class="slides">
+      <li style="background-image:url(../static/images/1.jpg);">
+        <div class="index_focus_info c-white">
+          <div class="txt-larger mg-bot">金果果<span class="font-num c-org">更懂孩子</span></div>
+          <p class="txt-small mg-bot">深谙孩子的成长之路</p>
+        </div>
+      </li>
+      <li style="background-image:url(../static/images/2.jpg);">
+        <div class="index_focus_info c-white">
+          <div class="txt-larger mg-bot"><span class="font-num c-org">孩子的成长关键期很重要</span></div>
+          <p class="txt-small c-org mg-bot">
+            请把宝贝的手<br />交给更懂孩子的人</p>
+          <a href="#" class="a-links-blue">马上联系我们</a>
+        </div>
+      </li>
+      <li style="background-image:url(../static/images/3.jpg);">
+        <div class="index_focus_info c-black">
+          <div class="txt-larger mg-bot">在金果果教室中</div>
+          <p class="txt-small  mg-bot">就像一个温暖的“家”<br />孩子只是从自己的“家”庭到另一个“HOME”<br />帮助适龄儿童家庭获得科学专业的金果果早期教育课程与服务</p>
+        </div>
+      </li>
+      <li style="background-image:url(../static/images/4.jpg);">
+        <div class="index_focus_info c-white">
+          <div class="txt-larger mg-bot">三重保障　一个承诺</div>
+          <p class="txt-small mg-bot">建立了广泛而深入的教师培训计划和完善的支持体系<br />我们承诺为您的孩子服务到底，您的满意是我们追求的目标！</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.flexslider').flexslider({
+        directionNav: true,
+        pauseOnAction: false
+      });
+      $('.flexslider').hover(function () {
+        $('.flex-direction-nav').fadeIn();
+      }, function () {
+        $('.flex-direction-nav').fadeOut();
+      })
+    });
+  </script>
+
+  <div class="box_logo"></div>
+  <div class="content">
+    <div class="content1 txt-small c-white">
+      <p>我们的源起
+        2003年我们的创始人王加胜先生在一次帮助海外朋友选择蒙特梭利学校开始，了解到中国缺少纯正科学系统的蒙特梭利教育。于2005年开始在中国上海创办了一家以蒙特梭利教育为特色早教中心，并受到了认可与好评。接下来几年中上海蒙特梭利教育团队，开始了蒙特梭利教育在幼儿园领域和早期教育领域的实践。为了加强品牌辨识度，我们注册了“MontessoriKids'
+        Home”商标，并专注把科学化的蒙特梭利教育带给中国的孩子。<br>
+        2007年为了确保（蒙特梭利儿童之家）在教育品质上能够达到基本统一，我们通过了商务部特许经营备案许可，备案号：0230101300900008，是当时中国为数不多的完成特许经营的教育企业之一。2010年上海蒙特梭利教育团队成功在上海世博会示范了蒙特梭利教室，并得到了国际社会的广泛关注。从而使蒙特梭利的教育理念在中国逐步获得了更广泛的认可。
+      </p>
+    </div>
+
+    <div class="content2 txt-small c-white">
+      <p>我们的源起
+        2003年我们的创始人王加胜先生在一次帮助海外朋友选择蒙特梭利学校开始，了解到中国缺少纯正科学系统的蒙特梭利教育。于2005年开始在中国上海创办了一家以蒙特梭利教育为特色早教中心，并受到了认可与好评。接下来几年中上海蒙特梭利教育团队，开始了蒙特梭利教育在幼儿园领域和早期教育领域的实践。为了加强品牌辨识度，我们注册了“MontessoriKids'
+        Home”商标，并专注把科学化的蒙特梭利教育带给中国的孩子。<br>
+        2007年为了确保（蒙特梭利儿童之家）在教育品质上能够达到基本统一，我们通过了商务部特许经营备案许可，备案号：0230101300900008，是当时中国为数不多的完成特许经营的教育企业之一。2010年上海蒙特梭利教育团队成功在上海世博会示范了蒙特梭利教室，并得到了国际社会的广泛关注。从而使蒙特梭利的教育理念在中国逐步获得了更广泛的认可。
+      </p>
+    </div>
+
+    <div class="content3">
+      <div class="word1 txt-medium"><span>PICTURE</span></div>
+      <div class="word2 txt-small"><span>园区图片</span></div>
+    </div>
+
+    <div class="content4">
+      <div class="content5">
+        <ul>
+          <li class="pic"><img src="../static/images/1.jpg" alt=""></li>
+          <li class="pic"><img src="../static/images/2.jpg" alt=""></li>
+          <li class="pic"><img src="../static/images/3.jpg" alt=""></li>
+        </ul>
+      </div>
+      <div class="content5">
+        <ul>
+          <li class="pic"><img src="../static/images/4.jpg" alt=""></li>
+          <li class="pic"><img src="../static/images/1.jpg" alt=""></li>
+          <li class="pic"><img src="../static/images/2.jpg" alt=""></li>
+        </ul>
+      </div>
+      <div class="content5">
+        <ul>
+          <li class="pic"><img src="../static/images/3.jpg" alt=""></li>
+          <li class="pic"><img src="../static/images/4.jpg" alt=""></li>
+          <li class="pic"><img src="../static/images/1.jpg" alt=""></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="ftWrap">
+    <div class="foot">
+      <div class="cent">
+        <div class="relate">
+          <div class="items">
+            <div class="tit"><i class="icon-angle-right"></i>关于我们</div>
+            <div class="con"> <a href="#">了解我们</a> <a href="#">教师团队</a> <a href="#">联系我们</a> </div>
+          </div>
+          <div class="items">
+            <div class="tit"><i class="icon-angle-right"></i>价值观</div>
+            <div class="con"> <a href="#">服务理念</a> <a href="#">用户权益</a> <a href="#">供应商职责</a>
+            </div>
+          </div>
+          <div class="items">
+            <div class="tit"><i class="icon-angle-right"></i>活动</div>
+            <div class="con"> <a href="#">活动与公告</a><a href="#">社会关注</a>
+            </div>
+          </div>
+          <div class="items">
+            <div class="tit"><i class="icon-angle-right"></i>合作伙伴</div>
+            <div class="con"> <a href="#">工作机会</a> <a href="#">第三方合作</a> <a href="#">商家入驻</a>
+            </div>
+          </div>
+          <div class="items last">
+            <div class="tel">
+              <h1>3828189</h1>
+              <p>周一至周日 8:00-18:00</p>
+              <a href="#" class="kf"><i class="kf-icon"></i>在线客服</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="cent">
+        <div class="copy-txt">
+          <div class="copy-menu"><a href="#">问题反馈</a><a href="#">帮助中心</a><a href="#">官方电话</a><a href="#">官方微信</a></div>
+          <p>Copyright © 2015 - 2016 EGC. All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
