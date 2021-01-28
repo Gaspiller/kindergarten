@@ -44,10 +44,9 @@
             success: function (result) {
                 if (result.code == 200) {
                     window.localStorage.setItem('dnblog_token', result.data.token);
-
                     window.localStorage.setItem('dnblog_user', result.username);
                     alert('登录成功');
-                    window.location.href = '/' + result.username + '/topics'
+                    location.href='http://127.0.0.1:5000/index'
                 }
                 else {
                     alert(result.error)

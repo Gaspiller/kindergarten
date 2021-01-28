@@ -133,3 +133,5 @@ CORS_ALLOW_HEADERS = (
     'x-csrftoken',
     'x-requested-with',
 )
+
+JWT_TOKEN_KEY = '321654'
