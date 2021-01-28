@@ -10,37 +10,37 @@ def index():
 
 
 @app.route('/login')
-def index():
+def login():
     # 首页
     return send_file('templates/login.html')
 
 
 @app.route('/register')
-def index():
+def register():
     # 首页
     return send_file('templates/register.html')
 
 
 @app.route('/news')
-def index():
+def news():
     # 首页
     return send_file('templates/news.html')
 
 
 @app.route('/article')
-def index():
+def article():
     # 首页
     return send_file('templates/article.html')
 
 
 @app.route('/show')
-def index():
+def show():
     # 首页
     return send_file('templates/show.html')
 
 
 @app.route('/write')
-def index():
+def write():
     # 首页
     return send_file('templates/write.html')
 
