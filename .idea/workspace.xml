@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65c0def9-78de-404d-af31-5fe18fc57baa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kindergarten_be/kindergarten_be/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kindergarten_be/user/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kindergarten_be/dtoken/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_be/dtoken/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kindergarten_be/kindergarten_be/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_be/kindergarten_be/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kindergarten_be/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_be/user/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kindergarten_be/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_be/user/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kindergarten_fe/flask_clien.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/flask_clien.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kindergarten_fe/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kindergarten_fe/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kindergarten_fe/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,16 +85,25 @@
       <option name="presentableId" value="Default" />
       <updated>1611635707170</updated>
     </task>
+    <task id="LOCAL-00001" summary="1、登录注册功能&#10;2、cors配置">
+      <created>1611817325024</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611817325024</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="1、登录注册功能&#10;2、cors配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、登录注册功能&#10;2、cors配置" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="61" width="871" height="828" key="CommitChangelistDialog2" timestamp="1611814131992">
+    <state x="552" y="61" width="871" height="828" key="CommitChangelistDialog2" timestamp="1611817665088">
       <screen x="67" y="27" width="1851" height="899" />
     </state>
-    <state x="552" y="61" width="871" height="828" key="CommitChangelistDialog2/67.27.1851.899@67.27.1851.899" timestamp="1611814131992" />
+    <state x="552" y="61" width="871" height="828" key="CommitChangelistDialog2/67.27.1851.899@67.27.1851.899" timestamp="1611817665088" />
     <state x="716" y="233" key="FileChooserDialogImpl" timestamp="1611679003046">
       <screen x="67" y="27" width="1851" height="899" />
     </state>
@@ -137,6 +136,10 @@
       <screen x="67" y="27" width="1851" height="899" />
     </state>
     <state x="511" y="110" key="SettingsEditor/67.27.1851.899@67.27.1851.899" timestamp="1611808413358" />
+    <state x="587" y="210" width="800" height="530" key="Vcs.Push.Dialog.v2" timestamp="1611817715706">
+      <screen x="67" y="27" width="1851" height="899" />
+    </state>
+    <state x="587" y="210" width="800" height="530" key="Vcs.Push.Dialog.v2/67.27.1851.899@67.27.1851.899" timestamp="1611817715706" />
     <state x="708" y="392" width="569" height="166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611813948660">
       <screen x="67" y="27" width="1851" height="899" />
     </state>
