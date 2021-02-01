@@ -21,10 +21,10 @@ def register():
     return send_file('templates/register.html')
 
 
-@app.route('/news')
+@app.route('/connect')
 def news():
     # 首页
-    return send_file('templates/news.html')
+    return send_file('templates/connect.html')
 
 
 @app.route('/article')
@@ -55,6 +55,18 @@ def present():
 def about():
     # 首页
     return send_file('templates/about.html')
+
+
+@app.route('/message')
+def message():
+    # 首页
+    return send_file('templates/message.html')
+
+
+@app.route('/change_message')
+def change_message():
+    # 首页
+    return send_file('templates/change_message.html')
 
 
 if __name__ == '__main__':

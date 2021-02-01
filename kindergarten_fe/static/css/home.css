@@ -19,7 +19,6 @@
 .egc-top .nav-cent .operate .sec-version{display:none;}
 .egc-top .nav-cent .operate a:hover{background:#333;}
 .egc-top .nav-cent .operate.reg{width:60px; right:0;}
-
 /*首页轮播大图*/
 .flexslider{position:relative;height:670px;overflow:hidden;background:url(../images/bx_loader.gif) 50% no-repeat;}
 .slides{position:relative;z-index:1;}
@@ -35,7 +34,6 @@
 .flex-direction-nav li a.flex-next{right:30px;background-position:0 -72px;}
 .flex-direction-nav li a.flex-next:hover{background-position:0 -216px;}
 .index_focus_info{position:absolute;left:0; top:20%;width:100%; text-align:center;}
-
 /* box */
 .box_logo{width:100%;height:50%;background:url(../images/egc-logo.jpg) no-repeat center/auto 80%;}
 .content{margin: 20px;}
@@ -48,7 +46,6 @@
 .content4 ul li{float: left;overflow: hidden;margin: 20px 50px;}
 .content4 ul .pic img{width: 200px;height: 200px;margin: 0 20px; opacity: 0.8;transition: all 0.5s;border-radius: 10px}
 .content4 ul li:hover img{opacity: 1;transform: scale(1.1);}
-
 /*foot*/
 .ftWrap{width:100%; background:#fff; padding:30px 0 20px 0;margin: 20px 0px;}
 .foot{width:1068px; margin:10px auto;}
@@ -67,17 +64,12 @@
 .foot .items .tel a i.kf-icon{position:absolute; left:15px; top:5px; width:23px; height:18px; background:url(../images/mb-kf-icon.png) 0 0 no-repeat; }
 .foot .items .tel a:hover{color:#F30; background:#ee7800; color:#fff; transition:background-color 0.5s ease;}
 .foot .items .tel a:hover i.kf-icon{background-position:0 -18px;}
-
 .tel-mb{width:100%; margin:10px 0; display:none; zoom:1; overflow:hidden;}
 .tel-mb span{color:#ee7800; float:left; padding:0 5px 0 0; font-family:Arial, Helvetica, sans-serif; font-size:14px;}
-
 .tel-mb a{float:right;border:1px solid #ee7800; background:#fff; display:block; width:93px; height:28px; padding-left:25px; text-align:center; font-size:12px; line-height:28px; color:#ee7800; position:relative;}
 .tel-mb a i.kf-icon{position:absolute; left:15px; top:5px; width:23px; height:18px; background:url(../images/mb-kf-icon.png) 0 0 no-repeat; }
 .tel-mb a:hover{color:#F30; background:#ee7800; color:#fff; transition:background-color 0.5s ease;}
 .tel-mb a:hover i.kf-icon{background-position:0 -18px;}
-
-
-
 .copyright{margin:20px 0; width:100%; background: #ffffff;;}
 .copyright .cent{width:1068px; margin:0 auto; padding:20px 0;  zoom:1; overflow:hidden; }
 .copyright .copy-txt{float:left; padding-left:66px; background:url(../images/egc-logo.jpg) no-repeat left/auto 150%;}
@@ -89,3 +81,19 @@
 .copyright .copy-txt .copy-menu a:after{width:1px; height:12px; background:#b0b0b0; position:absolute; left:0; top:3px; content:"";}
 .copyright .copy-txt .copy-menu a:first-child:after{display:none;}
 .copyright .copy-txt .copy-menu a:hover{color:#0074b2;}
+.content6 {width: 60%;margin-left: 20%;}
+.article { overflow: hidden; margin-bottom: 20px; padding: 20px; background: #ffffff; -webkit-box-shadow: 0 2px 5px 0 rgba(146, 146, 146, .1); -moz-box-shadow: 0 2px 5px 0 rgba(146, 146, 146, .1); box-shadow: 0 2px 5px 0 rgba(146, 146, 146, .1); -webkit-transition: all 0.6s ease; -moz-transition: all 0.6s ease; -o-transition: all 0.6s ease; transition: all 0.6s ease; }
+.article .bigpic { float: left; width: 30%; max-height: 170px; margin-right: 20px; display: block; overflow: hidden; }
+.article .bigpic img { width: 100%; height: auto; -webkit-transition: all 0.6s ease; -moz-transition: all 0.6s ease; -o-transition: all 0.6s ease; transition: all 0.6s ease; margin-bottom: 10px ;}
+.article .bigpic :hover img { transform: scale(1.1) }
+.article .articletitle { margin: 0 0 10px 0; font-size: 20px; overflow: hidden; }
+.article .articletitle a:hover { color: #337ab7; }
+.article .articletext { font-size: 14px; color: #566573; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 3; margin-top: 20px }
+.articleinfo { overflow: hidden; margin-top: 30px }
+.articleinfo ul li {font-size: 12px; padding: 0 0 0 20px; margin: 0 15px 0 0; color: #748594; line-height: 1.5; display: inline-block; }
+.articleinfo ul li a { color: #748594; }
+.articleinfo ul li a:hover { color: #000 }
+.articleinfo .author { background: url(../images/auicon.jpg) no-repeat 0 0 ;}
+.articleinfo .lmname { background: url(../images/auicon.jpg) no-repeat top -23px left; }
+.articleinfo .timer { background: url(../images/auicon.jpg) no-repeat top -44px left; }
+.articleinfos .like { background: url(../images/auicon.jpg) no-repeat top -85px left; }
