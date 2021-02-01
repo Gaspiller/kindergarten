@@ -3,15 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="65c0def9-78de-404d-af31-5fe18fc57baa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kindergarten_fe/flask_clien.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/flask_clien.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kindergarten_fe/static/css/show.css" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/static/css/show.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kindergarten_fe/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kindergarten_fe/templates/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/templates/article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kindergarten_fe/templates/change_message.html" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/templates/change_message.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kindergarten_fe/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kindergarten_fe/templates/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/templates/news.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kindergarten_fe/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/templates/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kindergarten_fe/templates/write.html" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/templates/write.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612075095017</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1、html页面修改">
+      <created>1612174395993</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1612174395993</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -134,12 +134,14 @@
     <MESSAGE value="1、登录注册功能&#10;2、cors配置" />
     <MESSAGE value="1、jwt" />
     <MESSAGE value="1、个人资料页&#10;2、个人资料修改页" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、个人资料页&#10;2、个人资料修改页" />
+    <MESSAGE value="1、html页面修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、html页面修改" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="61" width="871" height="828" key="CommitChangelistDialog2" timestamp="1612075094594">
-      <screen x="67" y="27" width="1851" height="899" />
+    <state x="551" y="61" width="871" height="828" key="CommitChangelistDialog2" timestamp="1612174395590">
+      <screen x="67" y="27" width="1847" height="895" />
     </state>
+    <state x="551" y="61" key="CommitChangelistDialog2/67.27.1847.895@67.27.1847.895" timestamp="1612174395590" />
     <state x="552" y="61" width="871" height="828" key="CommitChangelistDialog2/67.27.1851.899@67.27.1851.899" timestamp="1612075094594" />
     <state x="716" y="233" key="FileChooserDialogImpl" timestamp="1611679003046">
       <screen x="67" y="27" width="1851" height="899" />
@@ -181,9 +183,10 @@
       <screen x="67" y="27" width="1851" height="899" />
     </state>
     <state x="708" y="392" width="569" height="166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1851.899@67.27.1851.899" timestamp="1611813948660" />
-    <state x="481" y="242" width="813" height="433" key="git4idea.merge.GitPullDialog" timestamp="1612075037878">
-      <screen x="67" y="27" width="1851" height="899" />
+    <state x="480" y="241" width="813" height="432" key="git4idea.merge.GitPullDialog" timestamp="1612174453652">
+      <screen x="67" y="27" width="1847" height="895" />
     </state>
+    <state x="480" y="241" width="813" height="432" key="git4idea.merge.GitPullDialog/67.27.1847.895@67.27.1847.895" timestamp="1612174453652" />
     <state x="481" y="242" width="813" height="433" key="git4idea.merge.GitPullDialog/67.27.1851.899@67.27.1851.899" timestamp="1612075037878" />
     <state x="688" y="386" width="598" height="178" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1611811228927">
       <screen x="67" y="27" width="1851" height="899" />
