@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65c0def9-78de-404d-af31-5fe18fc57baa" name="Default Changelist" comment="1、登录注册功能&#10;2、cors配置">
-      <change afterPath="$PROJECT_DIR$/kindergarten_fe/templates/change_message.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kindergarten_fe/templates/message.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/models.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/models.iml" afterDir="false" />
+    <list default="true" id="65c0def9-78de-404d-af31-5fe18fc57baa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kindergarten_be/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_be/user/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kindergarten_be/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_be/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_fe/flask_clien.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/flask_clien.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_fe/static/css/show.css" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/static/css/show.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_fe/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_fe/templates/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/templates/article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_fe/templates/change_message.html" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/templates/change_message.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_fe/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_fe/templates/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/templates/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_fe/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/templates/show.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kindergarten_fe/templates/write.html" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/templates/write.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611856346991</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1、个人资料页&#10;2、个人资料修改页">
+      <created>1612075095017</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612075095017</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -123,13 +133,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1、登录注册功能&#10;2、cors配置" />
     <MESSAGE value="1、jwt" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、jwt" />
+    <MESSAGE value="1、个人资料页&#10;2、个人资料修改页" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、个人资料页&#10;2、个人资料修改页" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="61" width="871" height="828" key="CommitChangelistDialog2" timestamp="1611856346614">
+    <state x="552" y="61" width="871" height="828" key="CommitChangelistDialog2" timestamp="1612075094594">
       <screen x="67" y="27" width="1851" height="899" />
     </state>
-    <state x="552" y="61" width="871" height="828" key="CommitChangelistDialog2/67.27.1851.899@67.27.1851.899" timestamp="1611856346614" />
+    <state x="552" y="61" width="871" height="828" key="CommitChangelistDialog2/67.27.1851.899@67.27.1851.899" timestamp="1612075094594" />
     <state x="716" y="233" key="FileChooserDialogImpl" timestamp="1611679003046">
       <screen x="67" y="27" width="1851" height="899" />
     </state>

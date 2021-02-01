@@ -45,5 +45,17 @@ def write():
     return send_file('templates/write.html')
 
 
+@app.route('/present')
+def present():
+    # 首页
+    return send_file('templates/present.html')
+
+
+@app.route('/about')
+def about():
+    # 首页
+    return send_file('templates/about.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)

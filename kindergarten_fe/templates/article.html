@@ -5,10 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="../css/base.css" />
-    <link rel="stylesheet" type="text/css" href="../css/home.css" />
-    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
-    <title>关于我们</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/home.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/font-awesome.css" />
+    <script type="text/javascript" src="../static/js/jquery-1.11.3.min.js"></script>
+
+    <title>文章列表</title>
+    <script type="text/javascript">
+        $(function () {
+            var setTime;
+            $(".egc-top .nav-cent .operate").hover(function () {
+                var _this = $(this);
+                setTime = setTimeout(function () {
+                    _this.find(".sec-version").slideDown(200);
+                    _this.find("i").removeClass("icon-angle-down").addClass("icon-angle-up");
+                }, 200);
+            }, function () {
+                if (setTime) {
+                    clearTimeout(setTime);
+                }
+                $(".egc-top .nav-cent .sec-version").slideUp(200);
+                $(".egc-top .nav-cent .operate i").removeClass("icon-angle-up").addClass("icon-angle-down");
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -35,13 +55,13 @@
     <div class="navigation">
         <div class="nav-cent">
             <ul>
-                <li class="logo"><a href="index.html"></a></li>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="#">礼物兑换</a></li>
-                <li><a href="#">成果展示</a></li>
-                <li><a href="#">文章发表</a></li>
-                <li><a href="#">最新动态</a></li>
-                <li><a href="#">关于我们</a></li>
+                <li class="logo"><a href="http://127.0.0.1:5000/index"></a></li>
+                <li><a href="http://127.0.0.1:5000/index">首页</a></li>
+                <li><a href="http://127.0.0.1:5000/present">礼物兑换</a></li>
+                <li><a href="http://127.0.0.1:5000/show">成果展示</a></li>
+                <li><a href="http://127.0.0.1:5000/write">文章发表</a></li>
+                <li><a href="http://127.0.0.1:5000/news">最新动态</a></li>
+                <li><a href="http://127.0.0.1:5000/about">关于我们</a></li>
             </ul>
         </div>
     </div>

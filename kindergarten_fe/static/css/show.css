@@ -75,19 +75,18 @@
 .copyright .copy-txt .copy-menu a:hover{color:#0074b2;}
 
 /*blogsbox*/
-.blogsbox { width: 100%; overflow: hidden; float: left }
-.blogs { overflow: hidden; margin-bottom: 20px; padding: 20px; background: #FFF; -webkit-box-shadow: 0 2px 5px 0 rgba(146, 146, 146, .1); -moz-box-shadow: 0 2px 5px 0 rgba(146, 146, 146, .1); box-shadow: 0 2px 5px 0 rgba(146, 146, 146, .1); -webkit-transition: all 0.6s ease; -moz-transition: all 0.6s ease; -o-transition: all 0.6s ease; transition: all 0.6s ease; }
-.blogs .blogpic { float: left; width: 30%; max-height: 170px; margin-right: 20px; display: block; overflow: hidden; }
-.blogs .blogpic img { width: 100%; height: auto; -webkit-transition: all 0.6s ease; -moz-transition: all 0.6s ease; -o-transition: all 0.6s ease; transition: all 0.6s ease; margin-bottom: 10px }
-.blogs .blogpic :hover img { transform: scale(1.1) }
-.blogs .blogtitle { margin: 0 0 10px 0; font-size: 20px; overflow: hidden; }
-.blogs .blogtitle a:hover { color: #337ab7; }
-.blogs .blogtext { font-size: 14px; color: #566573; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 3; margin-top: 20px }
-.bloginfo { overflow: hidden; margin-top: 30px }
-.bloginfo ul li {font-size: 12px; padding: 0 0 0 20px; margin: 0 15px 0 0; color: #748594; line-height: 1.5; display: inline-block; }
-.bloginfo ul li a { color: #748594; }
-.bloginfo ul li a:hover { color: #000 }
-.bloginfo .author { background: url(../images/auicon.jpg) no-repeat 0 0 ;}
-.bloginfo .lmname { background: url(../images/auicon.jpg) no-repeat top -23px left; }
-.bloginfo .timer { background: url(../images/auicon.jpg) no-repeat top -44px left; }
-.bloginfo .like { background: url(../images/auicon.jpg) no-repeat top -85px left; }
+.article { overflow: hidden; margin-bottom: 20px; padding: 20px; background: #f0f0f0; -webkit-box-shadow: 0 2px 5px 0 rgba(146, 146, 146, .1); -moz-box-shadow: 0 2px 5px 0 rgba(146, 146, 146, .1); box-shadow: 0 2px 5px 0 rgba(146, 146, 146, .1); -webkit-transition: all 0.6s ease; -moz-transition: all 0.6s ease; -o-transition: all 0.6s ease; transition: all 0.6s ease; }
+.article .bigpic { float: left; width: 30%; max-height: 170px; margin-right: 20px; display: block; overflow: hidden; }
+.article .bigpic img { width: 100%; height: auto; -webkit-transition: all 0.6s ease; -moz-transition: all 0.6s ease; -o-transition: all 0.6s ease; transition: all 0.6s ease; margin-bottom: 10px ;}
+.article .bigpic :hover img { transform: scale(1.1) }
+.article .articletitle { margin: 0 0 10px 0; font-size: 20px; overflow: hidden; }
+.article .articletitle a:hover { color: #337ab7; }
+.article .articletext { font-size: 14px; color: #566573; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 3; margin-top: 20px }
+.articleinfo { overflow: hidden; margin-top: 30px }
+.articleinfo ul li {font-size: 12px; padding: 0 0 0 20px; margin: 0 15px 0 0; color: #748594; line-height: 1.5; display: inline-block; }
+.articleinfo ul li a { color: #748594; }
+.articleinfo ul li a:hover { color: #000 }
+.articleinfo .author { background: url(../images/auicon.jpg) no-repeat 0 0 ;}
+.articleinfo .lmname { background: url(../images/auicon.jpg) no-repeat top -23px left; }
+.articleinfo .timer { background: url(../images/auicon.jpg) no-repeat top -44px left; }
+.articleinfos .like { background: url(../images/auicon.jpg) no-repeat top -85px left; }
