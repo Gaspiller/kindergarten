@@ -81,7 +81,7 @@
 .copyright .copy-txt .copy-menu a:after{width:1px; height:12px; background:#b0b0b0; position:absolute; left:0; top:3px; content:"";}
 .copyright .copy-txt .copy-menu a:first-child:after{display:none;}
 .copyright .copy-txt .copy-menu a:hover{color:#0074b2;}
-.content6 {width: 60%;margin-left: 20%;}
+.content6 {width: 60%;margin-left: 20%;margin-bottom: 20px}
 .article { overflow: hidden; margin-bottom: 20px; padding: 20px; background: #ffffff; -webkit-box-shadow: 0 2px 5px 0 rgba(146, 146, 146, .1); -moz-box-shadow: 0 2px 5px 0 rgba(146, 146, 146, .1); box-shadow: 0 2px 5px 0 rgba(146, 146, 146, .1); -webkit-transition: all 0.6s ease; -moz-transition: all 0.6s ease; -o-transition: all 0.6s ease; transition: all 0.6s ease; }
 .article .bigpic { float: left; width: 30%; max-height: 170px; margin-right: 20px; display: block; overflow: hidden; }
 .article .bigpic img { width: 100%; height: auto; -webkit-transition: all 0.6s ease; -moz-transition: all 0.6s ease; -o-transition: all 0.6s ease; transition: all 0.6s ease; margin-bottom: 10px ;}

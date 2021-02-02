@@ -28,6 +28,8 @@
                 $(".egc-top .nav-cent .operate i").removeClass("icon-angle-up").addClass("icon-angle-down");
             });
         });
+
+
     </script>
 </head>
 
@@ -157,21 +159,25 @@
                 <div class="relate">
                     <div class="items">
                         <div class="tit"><i class="icon-angle-right"></i>关于我们</div>
-                        <div class="con"> <a href="#">了解我们</a> <a href="#">教师团队</a> <a href="#">联系我们</a> </div>
+                        <div class="con"><a href="#">了解我们</a><a href="#">行政团队</a><a href="#">教师团队</a><a
+                                href="#">联系我们</a></div>
                     </div>
                     <div class="items">
-                        <div class="tit"><i class="icon-angle-right"></i>价值观</div>
-                        <div class="con"> <a href="#">服务理念</a> <a href="#">用户权益</a> <a href="#">供应商职责</a>
+                        <div class="tit"><i class="icon-angle-right"></i>办园目标</div>
+                        <div class="con"><a href="#">促进幼儿快乐成长</a><a href="#">健康成长</a><a href="#">和谐发展</a><a
+                                href="#">构建特色示范园</a>
                         </div>
                     </div>
                     <div class="items">
-                        <div class="tit"><i class="icon-angle-right"></i>活动</div>
-                        <div class="con"> <a href="#">活动与公告</a><a href="#">社会关注</a>
+                        <div class="tit"><i class="icon-angle-right"></i>办园理念</div>
+                        <div class="con"><a href="#">启迪智慧</a><a href="#">陶冶心灵</a><a href="#">培养兴趣</a><a
+                                href="#">健康成长</a>
                         </div>
+
                     </div>
                     <div class="items">
-                        <div class="tit"><i class="icon-angle-right"></i>合作伙伴</div>
-                        <div class="con"> <a href="#">工作机会</a> <a href="#">第三方合作</a> <a href="#">商家入驻</a>
+                        <div class="tit"><i class="icon-angle-right"></i>金果果精神</div>
+                        <div class="con"><a href="#">奉献</a> <a href="#">进取</a> <a href="#">创新</a><a href="#">育人</a>
                         </div>
                     </div>
                     <div class="items last">
@@ -194,7 +200,29 @@
             </div>
         </div>
     </div>
+    <script>
+        var html_body = ''
+        $.ajax({
+            type: 'get',
+            url: "http://127.0.0.1:8000/show",
+            success: function (result) {
+                if (result.code == 200) {
+                    html += '<div class="article" data-scroll-reveal="enter bottom over 1s">';
+                    html += '<h3 class="articletitle"><a href="http://127.0.0.1:5000/article" target="_blank">result.title</a></h3>';
+                    html += '<span class="  bigpic"><a href="http://127.0.0.1:5000/article" title=""><img src="../static/images/result.pic" alt=""></a></span>';
+                    html += '<p class="articletext">result.content</p>';
+                    html += '<div class="articleinfo">';
+                    html += '<ul><li class="author"><a href="info.html">result.name</a></li>';
+                    html += '<li class="lmname"><a href="info.html">学无止境</a></li>';
+                    html += '<li class="timer">2018-5-13</li><li class="like">9999</li>';
+                    html += '</ul></div></div>';
+                    $('.content6').html(html_body);
+                }
+            }
+        })
 
+
+    </script>
 </body>
 
 </html>

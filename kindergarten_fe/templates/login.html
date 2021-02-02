@@ -43,10 +43,10 @@
             url: 'http://127.0.0.1:8000/v1/tokens',
             success: function (result) {
                 if (result.code == 200) {
-                    window.localStorage.setItem('dnblog_token', result.data.token);
-                    window.localStorage.setItem('dnblog_user', result.username);
+                    window.localStorage.setItem('dn_token', result.data.token);
+                    window.localStorage.setItem('dn_user', result.username);
                     alert('登录成功');
-                    location.href='http://127.0.0.1:5000/index'
+                    location.href = 'http://127.0.0.1:5000/index'
                 }
                 else {
                     alert(result.error)
