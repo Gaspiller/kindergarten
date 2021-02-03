@@ -3,8 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="65c0def9-78de-404d-af31-5fe18fc57baa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kindergarten_fe/static/css/show.css" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/static/css/show.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/article/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_be/article/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/dtoken/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_be/dtoken/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/kindergarten_be/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_be/kindergarten_be/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_be/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/user/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/user/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/user/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/user/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/user/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/user/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/user/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/user/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/user/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_fe/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/static/css/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kindergarten_fe/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/templates/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_fe/templates/write.html" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/templates/write.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +131,21 @@
       <option name="project" value="LOCAL" />
       <updated>1612174395993</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="html页面修改">
+      <created>1612179359373</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1612179359373</updated>
+    </task>
+    <task id="LOCAL-00006" summary="html页面修改">
+      <created>1612179482460</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1612179482460</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -135,13 +163,14 @@
     <MESSAGE value="1、jwt" />
     <MESSAGE value="1、个人资料页&#10;2、个人资料修改页" />
     <MESSAGE value="1、html页面修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、html页面修改" />
+    <MESSAGE value="html页面修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="html页面修改" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="551" y="61" width="871" height="828" key="CommitChangelistDialog2" timestamp="1612179358612">
+    <state x="551" y="61" width="871" height="828" key="CommitChangelistDialog2" timestamp="1612179482175">
       <screen x="67" y="27" width="1847" height="895" />
     </state>
-    <state x="551" y="61" width="871" height="828" key="CommitChangelistDialog2/67.27.1847.895@67.27.1847.895" timestamp="1612179358612" />
+    <state x="551" y="61" width="871" height="828" key="CommitChangelistDialog2/67.27.1847.895@67.27.1847.895" timestamp="1612179482175" />
     <state x="552" y="61" width="871" height="828" key="CommitChangelistDialog2/67.27.1851.899@67.27.1851.899" timestamp="1612075094594" />
     <state x="716" y="233" key="FileChooserDialogImpl" timestamp="1611679003046">
       <screen x="67" y="27" width="1851" height="899" />
@@ -183,10 +212,14 @@
       <screen x="67" y="27" width="1851" height="899" />
     </state>
     <state x="708" y="392" width="569" height="166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1851.899@67.27.1851.899" timestamp="1611813948660" />
-    <state x="480" y="241" width="813" height="432" key="git4idea.merge.GitPullDialog" timestamp="1612179376290">
+    <state x="182" y="47" width="1553" height="846" maximized="true" key="dock-window-1" timestamp="1612188243962">
       <screen x="67" y="27" width="1847" height="895" />
     </state>
-    <state x="480" y="241" width="813" height="432" key="git4idea.merge.GitPullDialog/67.27.1847.895@67.27.1847.895" timestamp="1612179376290" />
+    <state x="182" y="47" width="1553" height="846" maximized="true" key="dock-window-1/67.27.1847.895@67.27.1847.895" timestamp="1612188243962" />
+    <state x="480" y="241" width="813" height="432" key="git4idea.merge.GitPullDialog" timestamp="1612179494102">
+      <screen x="67" y="27" width="1847" height="895" />
+    </state>
+    <state x="480" y="241" width="813" height="432" key="git4idea.merge.GitPullDialog/67.27.1847.895@67.27.1847.895" timestamp="1612179494102" />
     <state x="481" y="242" width="813" height="433" key="git4idea.merge.GitPullDialog/67.27.1851.899@67.27.1851.899" timestamp="1612075037878" />
     <state x="688" y="386" width="598" height="178" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1611811228927">
       <screen x="67" y="27" width="1851" height="899" />

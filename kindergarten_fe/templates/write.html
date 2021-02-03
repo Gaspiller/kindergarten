@@ -66,25 +66,30 @@
         </div>
     </div>
 
-    <div>
-        <h1>
-            <p class="n1">发表文章</p>
-        </h1>
-        <div class="infosbox">
-            <br>
-            <p>
-                <input class="comment_input" id="author" maxlength="50" name="author" required="required" size="25"
-                    tabindex="1" type="text">
-                <label for="author">文章标题</label>
-            </p>
-            <br>
-            <p class="classification">
-                <input name="category" type="radio" value="tec" checked=check>最新动态
-                <input name="category" type="radio" value="no-tec">官方通告
-            </p>
+    <div class="content">
+        <div class="content3">
+            <div class="word1 txt-medium"><span>ARTICLE</span></div>
+            <div class="word2 txt-small"><span>文章发表</span></div>
+        </div>
+
+        <div class="content3">
             <br>
             <form>
-                <div id="editor" style="margin-left: 12px;margin-right: 12px"></div>
+                <p>
+                    <input class="comment_input" id="author" maxlength="50" name="author" required="required" size="25"
+                        tabindex="1" type="text" placeholder="请输入文章标题">
+                    <br>
+                    <input class="little_comment_input" id="author" maxlength="50" name="author" required="required"
+                        size="25" tabindex="1" type="text" placeholder="请输入文章小标题">
+                </p>
+                <br>
+                <p class="classification">
+                    <input name="category" type="radio" value="tec" checked=check>最新动态
+                    <input name="category" type="radio" value="no-tec">官方通告
+                </p>
+                <br>
+
+                <div id="editor" style="margin:20px 20% 20px 20%;"></div>
                 <br>
                 <p>
                     <input id="id_article" name="article" type="hidden" value="1">

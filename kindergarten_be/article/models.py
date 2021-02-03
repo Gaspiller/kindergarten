@@ -9,4 +9,4 @@ class Article(models.Model):
     updated_time = models.DateTimeField(auto_now=True)
 
     class Meta:
-        db_table = 'Article'
+        db_table = 'article_article'
