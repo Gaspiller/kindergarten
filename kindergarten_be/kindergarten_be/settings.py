@@ -27,7 +27,8 @@ INSTALLED_APPS = [
     'message',
     'tools',
     'dtoken',
-    'corsheaders'
+    'corsheaders',
+    'user'
 ]
 
 MIDDLEWARE = [

@@ -57,13 +57,13 @@ def about():
     return send_file('templates/about.html')
 
 
-@app.route('/message')
+@app.route('/<username>/msg')
 def message():
     # 首页
     return send_file('templates/message.html')
 
 
-@app.route('/change_message')
+@app.route('/<username>/change_msg')
 def change_message():
     # 首页
     return send_file('templates/change_message.html')
