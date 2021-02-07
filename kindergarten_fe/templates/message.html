@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="../css/base.css" />
-    <link rel="stylesheet" type="text/css" href="../css/home.css" />
-    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/home.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/font-awesome.css" />
+    <script type="text/javascript" src="../static/js/jquery-1.11.3.min.js"></script>
     <title>个人资料</title>
 </head>
 
@@ -92,7 +93,7 @@
     <script charset="utf-8">
         var url = document.location.toString();
         var arrUrl = url.split("//");
-        var blog_username = arrUrl[1].split('/')[1];
+        var login_username = arrUrl[1].split('/')[1];
         var html_body = '';
         token = window.localStorage.getItem('dn_token');
         username = window.localStorage.getItem('dn_user');
@@ -109,7 +110,7 @@
                 if (200 == result.code) {
                     console.log(result.data.nickname);
                     $(document).attr('title', result.data.nickname + '的个人资料');
-                    header_html = makeHeader(blog_username, username)
+                    header_html = makeHeader(login_username, username)
                     html_body += header_html
 
                     html_body += '<div class="pagebg ab"> </div>';
@@ -151,9 +152,7 @@
                     html_body += result.data.nickname;
                     html_body += '</a>';
                     html_body += '</footer>';
-                    $('body').html(html_body);
-                    //初始化登出事件
-                    loginOut()
+                    $('.navigation').html(html_body);
 
                     //下拉菜单
                     $('.nav>li').hover(function () {

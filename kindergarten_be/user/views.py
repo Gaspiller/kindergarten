@@ -1,10 +1,11 @@
 import json
 from django.http import JsonResponse
+from django.utils.decorators import method_decorator
 from django.views import View
+
+from tools.logging_dec import logging_check
 from .models import UserProfile
 import hashlib
-
-
 
 
 # 异常码 10100-10199
@@ -50,3 +51,20 @@ class UserViews(View):
 
         result = {'code': 200, 'username': username, 'data': {}}
         return JsonResponse(result)
+
+    @method_decorator(logging_check)
+    def put(self, request, username=None):
+        json_str = request.body
+        json_obj = json.loads(json_str)
+
+        try:
+            user = UserProfile.objects.get(username=username)
+        except Exception as e:
+            result = {'code': 10103, 'error': '用户名错误'}
+            return JsonResponse(result)
+        user.sign = json_obj['sign']
+        user.info = json_obj['info']
+        user.nickname = json_obj['nickname']
+
+        user.save()
+        return JsonResponse({'code': 200})

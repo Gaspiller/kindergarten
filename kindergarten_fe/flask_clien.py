@@ -58,13 +58,13 @@ def about():
 
 
 @app.route('/<username>/msg')
-def message():
+def message(username):
     # 首页
     return send_file('templates/message.html')
 
 
 @app.route('/<username>/change_msg')
-def change_message():
+def change_message(username):
     # 首页
     return send_file('templates/change_message.html')
 

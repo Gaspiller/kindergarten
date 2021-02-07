@@ -114,8 +114,8 @@
         </div>
     </div>
 <script>
-    token = window.localStorage.getItem('dnblog_token');
-    username = window.localStorage.getItem('dnblog_user');
+    token = window.localStorage.getItem('dn_token');
+    username = window.localStorage.getItem('dn_user');
     var html_body = ''
     $.ajax({
        // 请求方式
@@ -173,9 +173,7 @@
                html_body += '</ul>';
                html_body += '<div class="clear"> </div>';
                html_body += '</div>';
-               $('body').html(html_body);
-               //初始化登出事件
-               loginOut()
+               $('.navigation').html(html_body);
              }else{
                  alert(result.error)
              }
@@ -208,7 +206,8 @@
         success:function (result) {
             if (200 == result.code){
                 alert("修改成功")
-                location.href = 'http://127.0.0.1:5000/message'
+                username = result.username
+                location.href = 'http://127.0.0.1:5000/username/msg'
             }else{
                 alert(result.error)
                 window.location.href = '/login'

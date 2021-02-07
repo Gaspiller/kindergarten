@@ -25,7 +25,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'article',
     'message',
-    'tools',
     'dtoken',
     'corsheaders',
     'user'
