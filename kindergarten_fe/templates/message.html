@@ -108,8 +108,8 @@
             },
             success: function (result) {
                 if (200 == result.code) {
-                    console.log(result.data.nickname);
-                    $(document).attr('title', result.data.nickname + '的个人资料');
+                    console.log(result.data.username);
+                    $(document).attr('title', result.data.username + '的个人资料');
                     header_html = makeHeader(login_username, username)
                     html_body += header_html
 

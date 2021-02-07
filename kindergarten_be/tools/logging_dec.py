@@ -2,6 +2,8 @@ from django.http import JsonResponse
 import jwt
 from django.conf import settings
 
+from user.models import UserProfile
+
 
 def logging_check(func):
     def wrap(request, *args, **kwargs):
@@ -16,8 +18,9 @@ def logging_check(func):
             result = {'code': 403, 'error': 'Please login'}
             return JsonResponse(result)
 
-        
-
+        username = res['username']
+        user = UserProfile.objects.get(username=username)
+        request.myuser = user
         return func(request, *args, **kwargs)
 
     return wrap

@@ -19,8 +19,8 @@ class UserViews(View):
             except Exception as e:
                 result = {'code': 10102, 'error': '用户名错误'}
                 return JsonResponse(result)
-            result = {'code': 200, 'username': username, 'data': {'info': user.info, 'sign': user.sign},
-                      'nickname': user.nickname}
+            result = {'code': 200, 'username': username, 'data': {'info': user.info, 'sign': user.sign,
+                      'nickname': user.nickname}}
             return JsonResponse(result)
 
         return JsonResponse({'code': 200, 'msg': '测试'})
@@ -57,11 +57,7 @@ class UserViews(View):
         json_str = request.body
         json_obj = json.loads(json_str)
 
-        try:
-            user = UserProfile.objects.get(username=username)
-        except Exception as e:
-            result = {'code': 10103, 'error': '用户名错误'}
-            return JsonResponse(result)
+        user = request.myuser
         user.sign = json_obj['sign']
         user.info = json_obj['info']
         user.nickname = json_obj['nickname']
