@@ -30,7 +30,9 @@ def tokens(request):
         result = {'code': 10202, 'error': '用户名或密码错误'}
         return JsonResponse(result)
     token = make_token(username)
-    result = {'code': 200, 'username': username, 'data': {'token': token.decode()}}
+    # user = UserProfile.objects.get(username=username)
+    identity = user.identity
+    result = {'code': 200, 'username': username, 'identity': identity, 'data': {'token': token.decode()}}
     return JsonResponse(result)
 
 

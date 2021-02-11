@@ -18,6 +18,8 @@ class UserProfile(models.Model):
     created_time = models.DateTimeField(auto_now_add=True)
     updated_time = models.DateTimeField(auto_now=True)
     coin = models.IntegerField(verbose_name="金币", default=0)
+    is_student = models.BooleanField(default=False)
+    is_teacher = models.BooleanField(default=False)
 
     class Meta:
         db_table = 'user_user'
