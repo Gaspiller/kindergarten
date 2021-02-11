@@ -73,41 +73,26 @@
 
     <div class="content6">
         <div class="article" data-scroll-reveal="enter bottom over 1s">
-            <h3 class="articletitle"><a href="http://127.0.0.1:5000/article" target="_blank">小超人</a></h3>
-            <span class="bigpic"><a href="http://127.0.0.1:5000/article" title=""><img src="../static/images/1.jpg"
-                        alt=""></a></span>
-            <p class="articletext">
-                商品价格：10 <br>
-                商品时间：2021-0212 <br>
+            <h3 class="shopname">小超人</h3>
+            <span class="bigpic"><img src="../static/images/1.jpg"
+                        alt=""></span>
+            <p class="price">
+                商品价格：10
             </p>
+            <div class="count">
+				数量
+			</div>
+            <div class="shop">
+				<input type="text" class="shopCount" value="1"/>
+			</div>
+			<div>
+				（限购200件）
+			</div>
+            <div>
+                <input type="button" value="购买" onclick="buy()">
+            </div>
         </div>
-        <div class="article" data-scroll-reveal="enter bottom over 1s">
-            <h3 class="articletitle"><a href="http://127.0.0.1:5000/article" target="_blank">小超人</a></h3>
-            <span class="bigpic"><a href="http://127.0.0.1:5000/article" title=""><img src="../static/images/1.jpg"
-                        alt=""></a></span>
-            <p class="articletext">
-                商品价格：10 <br>
-                商品时间：2021-0212 <br>
-            </p>
-        </div>
-        <div class="article" data-scroll-reveal="enter bottom over 1s">
-            <h3 class="articletitle"><a href="http://127.0.0.1:5000/article" target="_blank">小超人</a></h3>
-            <span class="bigpic"><a href="http://127.0.0.1:5000/article" title=""><img src="../static/images/1.jpg"
-                        alt=""></a></span>
-            <p class="articletext">
-                商品价格：10 <br>
-                商品时间：2021-0212 <br>
-            </p>
-        </div>
-        <div class="article" data-scroll-reveal="enter bottom over 1s">
-            <h3 class="articletitle"><a href="http://127.0.0.1:5000/article" target="_blank">小超人</a></h3>
-            <span class="bigpic"><a href="http://127.0.0.1:5000/article" title=""><img src="../static/images/1.jpg"
-                        alt=""></a></span>
-            <p class="articletext">
-                商品价格：10 <br>
-                商品时间：2021-0212 <br>
-            </p>
-        </div>
+
     </div>
     <div class="ftWrap">
         <div class="foot">
@@ -157,6 +142,34 @@
         </div>
     </div>
 
+
+
+     function regist() {
+        token = window.localStorage.getItem('dn_token');
+        username = window.localStorage.getItem('dn_user');
+        var shopname = $('.articletitle').val();
+        var count = $('.shopCount').val();
+        var price = $('.price').val();
+        var post_data = {'username':username,'shopname':shopname,'count':count,'price':price};
+
+
+        $.ajax({
+            type: 'post',
+            contentType: 'application/json',
+            dataType: 'json',
+            data: JSON.stringify(post_data),
+            url: 'http://127.0.0.1:8000/v1/present/shopname',
+            success: function (result) {
+                if (result.code == 200) {
+                    alert('购买成功')
+                }
+                else {
+                    alert(result.error)
+                }
+            }
+        })
+
+    }
 
 </body>
 
