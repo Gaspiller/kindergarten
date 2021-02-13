@@ -15,7 +15,7 @@ def logging_check(func):
             res = jwt.decode(token, settings.JWT_TOKEN_KEY)
         except Exception as e:
             print('jwt decode erro is %s' % e)
-            result = {'code': 403, 'error': 'Please login'}
+            result = {'code': 403, 'error': 'Please login!!'}
             return JsonResponse(result)
 
         username = res['username']

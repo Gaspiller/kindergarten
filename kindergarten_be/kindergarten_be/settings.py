@@ -27,7 +27,8 @@ INSTALLED_APPS = [
     'message',
     'dtoken',
     'corsheaders',
-    'user'
+    'user',
+    'present'
 ]
 
 MIDDLEWARE = [
@@ -134,3 +135,4 @@ CORS_ALLOW_HEADERS = (
 )
 
 JWT_TOKEN_KEY = '321654'
+TEACHER_PASS = '188136'

@@ -2,14 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65c0def9-78de-404d-af31-5fe18fc57baa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kindergarten_be/present/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kindergarten_be/present/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kindergarten_be/user/migrations/0002_auto_20210211_1749.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kindergarten_be/present/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kindergarten_be/present/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kindergarten_be/present/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kindergarten_be/present/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kindergarten_be/present/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kindergarten_be/present/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/article/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_be/article/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/dtoken/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_be/dtoken/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/kindergarten_be/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_be/kindergarten_be/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kindergarten_be/kindergarten_be/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_be/kindergarten_be/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kindergarten_be/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_be/user/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/present/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_be/present/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/tools/logging_dec.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_be/tools/logging_dec.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_be/user/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kindergarten_fe/templates/present.html" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/templates/present.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_fe/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_fe/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613038252019</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="present.html">
+      <created>1613060220312</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1613060220312</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -224,34 +240,35 @@
     <MESSAGE value="change_message.html" />
     <MESSAGE value="change_message" />
     <MESSAGE value="identity" />
-    <option name="LAST_COMMIT_MESSAGE" value="identity" />
+    <MESSAGE value="present.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="present.html" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="61" width="871" height="828" key="CommitChangelistDialog2" timestamp="1613038251614">
+    <state x="552" y="61" width="871" height="828" key="CommitChangelistDialog2" timestamp="1613060220073">
       <screen x="67" y="27" width="1851" height="899" />
     </state>
     <state x="551" y="61" width="871" height="828" key="CommitChangelistDialog2/67.27.1847.895@67.27.1847.895" timestamp="1612179482175" />
-    <state x="552" y="61" width="871" height="828" key="CommitChangelistDialog2/67.27.1851.899@67.27.1851.899" timestamp="1613038251614" />
+    <state x="552" y="61" width="871" height="828" key="CommitChangelistDialog2/67.27.1851.899@67.27.1851.899" timestamp="1613060220073" />
     <state x="716" y="233" key="FileChooserDialogImpl" timestamp="1611679003046">
       <screen x="67" y="27" width="1851" height="899" />
     </state>
     <state x="716" y="233" key="FileChooserDialogImpl/67.27.1851.899@67.27.1851.899" timestamp="1611679003046" />
-    <state width="1825" height="259" key="GridCell.Tab.0.bottom" timestamp="1613047718322">
+    <state width="1825" height="136" key="GridCell.Tab.0.bottom" timestamp="1613215216724">
       <screen x="67" y="27" width="1851" height="899" />
     </state>
-    <state width="1825" height="259" key="GridCell.Tab.0.bottom/67.27.1851.899@67.27.1851.899" timestamp="1613047718322" />
-    <state width="1825" height="259" key="GridCell.Tab.0.center" timestamp="1613047718321">
+    <state width="1825" height="136" key="GridCell.Tab.0.bottom/67.27.1851.899@67.27.1851.899" timestamp="1613215216724" />
+    <state width="1825" height="136" key="GridCell.Tab.0.center" timestamp="1613215216722">
       <screen x="67" y="27" width="1851" height="899" />
     </state>
-    <state width="1825" height="259" key="GridCell.Tab.0.center/67.27.1851.899@67.27.1851.899" timestamp="1613047718321" />
-    <state width="1825" height="259" key="GridCell.Tab.0.left" timestamp="1613047718320">
+    <state width="1825" height="136" key="GridCell.Tab.0.center/67.27.1851.899@67.27.1851.899" timestamp="1613215216722" />
+    <state width="1825" height="136" key="GridCell.Tab.0.left" timestamp="1613215216721">
       <screen x="67" y="27" width="1851" height="899" />
     </state>
-    <state width="1825" height="259" key="GridCell.Tab.0.left/67.27.1851.899@67.27.1851.899" timestamp="1613047718320" />
-    <state width="1825" height="259" key="GridCell.Tab.0.right" timestamp="1613047718321">
+    <state width="1825" height="136" key="GridCell.Tab.0.left/67.27.1851.899@67.27.1851.899" timestamp="1613215216721" />
+    <state width="1825" height="136" key="GridCell.Tab.0.right" timestamp="1613215216723">
       <screen x="67" y="27" width="1851" height="899" />
     </state>
-    <state width="1825" height="259" key="GridCell.Tab.0.right/67.27.1851.899@67.27.1851.899" timestamp="1613047718321" />
+    <state width="1825" height="136" key="GridCell.Tab.0.right/67.27.1851.899@67.27.1851.899" timestamp="1613215216723" />
     <state x="243" y="101" width="1480" height="749" key="MergeDialog" timestamp="1611814083440">
       <screen x="67" y="27" width="1851" height="899" />
     </state>

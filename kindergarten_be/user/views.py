@@ -2,10 +2,10 @@ import json
 from django.http import JsonResponse
 from django.utils.decorators import method_decorator
 from django.views import View
-
 from tools.logging_dec import logging_check
 from .models import UserProfile
 import hashlib
+from django.conf import settings
 
 
 # 异常码 10100-10199
@@ -52,10 +52,16 @@ class UserViews(View):
 
         p_m = hashlib.md5()
         p_m.update(password_1.encode())
+
         if identity:
-            UserProfile.objects.create(username=username, nickname=username, password=p_m.hexdigest(), email=email,
-                                       phone=phone, is_teacher=True)
-        else:
+            if identity == settings.TEACHER_PASS:
+                UserProfile.objects.create(username=username, nickname=username, password=p_m.hexdigest(), email=email,
+                                           phone=phone, is_teacher=True)
+            else:
+                result = {'code': 10103, 'error': '邀请码错误'}
+                return JsonResponse(result)
+
+        elif not identity:
             UserProfile.objects.create(username=username, nickname=username, password=p_m.hexdigest(), email=email,
                                        phone=phone, is_student=True)
 

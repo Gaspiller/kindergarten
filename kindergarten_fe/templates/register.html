@@ -101,7 +101,8 @@
         var password_2 = $('.password_2').val();
         var phone = $('.phone').val();
         var sms_num = $('.sms_num').val();
-        var post_data = { 'username': username, 'email': email, 'password_1': password_1, 'password_2': password_2, 'phone': phone, 'sms_num': sms_num };
+        var identity = $('.identity').val();
+        var post_data = { 'username': username, 'email': email, 'password_1': password_1, 'password_2': password_2, 'phone': phone, 'sms_num': sms_num ,'identity':identity};
 
 
         $.ajax({
