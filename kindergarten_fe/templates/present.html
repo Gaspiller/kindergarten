@@ -77,8 +77,8 @@
     <div class="article" data-scroll-reveal="enter bottom over 1s">
         <h3 class="shopname">小超人</h3>
         <span class="bigpic"><img src="../static/images/1.jpg" alt=""></span>
-        <p class="price">
-            商品价格：10
+        <p>
+            商品价格：<span class="price">10</span>
         </p>
         <div class="count">
             数量
@@ -149,7 +149,7 @@
         token = window.localStorage.getItem('dn_token');
         username = window.localStorage.getItem('dn_user');
         var shopname = $('.shopname').html();
-        var shopcount = $('.shopCount').html();
+        var shopcount = $('.shopCount').val();
         var price = $('.price').html();
         var post_data = {'username':username,'shopname':shopname,'shopcount':shopcount,'price':price};
 
@@ -166,15 +166,17 @@
             success: function (result) {
                 if (result.code == 200) {
                     alert('购买成功')
+                    location.href='http://127.0.0.1:5000/index'
                 }
                 else {
                     alert(result.error)
-                    location.href='http://127.0.0.1:5000/login'
                 }
             }
         })
 
     }
+
+
 
 
 </script>

@@ -1,14 +1,10 @@
 import json
-
 from django.http import JsonResponse
-from django.shortcuts import render
 from django.utils.decorators import method_decorator
 from django.views import View
-
 from tools.logging_dec import logging_check
 
 # 异常码 10300-10399
-from user.models import UserProfile
 
 
 class PresentViews(View):
@@ -23,15 +19,15 @@ class PresentViews(View):
 
         username = json_obj['username']
         shopname = json_obj['shopname']
-        count = json_obj['count']
-        price = json_obj['price']
+        shopcount = int(json_obj['shopcount'])
+        price = int(json_obj['price'])
         user = request.myuser
-        coin = user.coin
-        if coin < price * count:
+        coin = int(user.coin)
+        if coin < price * shopcount:
             result = {'code': 10301, 'error': '金币不够'}
             return JsonResponse(result)
         else:
-            coin = coin - price * count
+            coin = coin - price * shopcount
             user.coin = coin
             user.save()
             result = {'code': 200}
