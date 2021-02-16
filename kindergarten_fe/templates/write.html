@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="../static/css/base.css" />
-    <link rel="stylesheet" type="text/css" href="../static/css/home.css" />
-    <link rel="stylesheet" type="text/css" href="../static/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/home.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/font-awesome.css"/>
     <script src="../static/js/jquery.min.js"></script>
     <script src="../static/js/wangEditor.js"></script>
     <title>发表文章</title>
@@ -28,126 +28,128 @@
                 $(".egc-top .nav-cent .operate i").removeClass("icon-angle-up").addClass("icon-angle-down");
             });
         });
+
+
     </script>
 </head>
 
 <body>
-    <div class="egc-top">
-        <div class="nav-cent">
-            <div class="top-r">
-                <div class="operate reg">注册<i class="icon-angle-down icon-large"></i>
-                    <div class="sec-version">
-                        <div class="items"><a href="#">教师版</a></div>
-                        <div class="items"><a href="#">学生版</a></div>
-                    </div>
-                </div>
-                <div class="operate">登陆<i class="icon-angle-down icon-large"></i>
-                    <div class="sec-version">
-                        <div class="items"><a href="#">教师版</a></div>
-                        <div class="items"><a href="#">学生版</a></div>
-                    </div>
+<div class="egc-top">
+    <div class="nav-cent">
+        <div class="top-r">
+            <div class="operate reg">注册<i class="icon-angle-down icon-large"></i>
+                <div class="sec-version">
+                    <div class="items"><a href="http://127.0.0.1:5000/register">教师版</a></div>
+                    <div class="items"><a href="http://127.0.0.1:5000/register">学生版</a></div>
                 </div>
             </div>
-            <div class="top-l">您好，欢迎来到金果果幼儿园首页</div>
-            <div class="clear_fix"></div>
+            <div class="operate">登陆<i class="icon-angle-down icon-large"></i>
+                <div class="sec-version">
+                    <div class="items"><a href="http://127.0.0.1:5000/login">教师版</a></div>
+                    <div class="items"><a href="http://127.0.0.1:5000/login">学生版</a></div>
+                </div>
+            </div>
         </div>
+        <div class="top-l">您好，欢迎来到金果果幼儿园首页</div>
+        <div class="clear_fix"></div>
     </div>
-    <div class="navigation">
-        <div class="nav-cent">
-            <ul>
-                <li class="logo"><a href="http://127.0.0.1:5000/index"></a></li>
-                <li><a href="http://127.0.0.1:5000/index">首页</a></li>
-                <li><a href="http://127.0.0.1:5000/present">礼物兑换</a></li>
-                <li><a href="http://127.0.0.1:5000/show">成果展示</a></li>
-                <li><a href="http://127.0.0.1:5000/write">文章发表</a></li>
-                <li><a href="http://127.0.0.1:5000/connect">联系我们</a></li>
-                <li><a href="http://127.0.0.1:5000/about">关于我们</a></li>
-            </ul>
-        </div>
+</div>
+<div class="navigation">
+    <div class="nav-cent">
+        <ul>
+            <li class="logo"><a href="http://127.0.0.1:5000/index"></a></li>
+            <li><a href="http://127.0.0.1:5000/index">首页</a></li>
+            <li><a href="http://127.0.0.1:5000/present">礼物兑换</a></li>
+            <li><a href="http://127.0.0.1:5000/show">成果展示</a></li>
+            <li><a href="http://127.0.0.1:5000/write">文章发表</a></li>
+            <li><a href="http://127.0.0.1:5000/connect">联系我们</a></li>
+            <li><a href="http://127.0.0.1:5000/about">关于我们</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="content">
+    <div class="content3">
+        <div class="word1 txt-medium"><span>ARTICLE</span></div>
+        <div class="word2 txt-small"><span>文章发表</span></div>
     </div>
 
-    <div class="content">
-        <div class="content3">
-            <div class="word1 txt-medium"><span>ARTICLE</span></div>
-            <div class="word2 txt-small"><span>文章发表</span></div>
-        </div>
-
-        <div class="content3">
+    <div class="content3">
+        <br>
+        <form>
+            <p>
+                <input class="title" maxlength="50" name="author" required="required" size="25"
+                       tabindex="1" type="text" placeholder="请输入文章标题">
+                <br>
+                <input class="little_title" maxlength="50" name="author" required="required"
+                       size="25" tabindex="1" type="text" placeholder="请输入文章小标题">
+            </p>
             <br>
-            <form>
-                <p>
-                    <input class="comment_input" id="author" maxlength="50" name="author" required="required" size="25"
-                        tabindex="1" type="text" placeholder="请输入文章标题">
-                    <br>
-                    <input class="little_comment_input" id="author" maxlength="50" name="author" required="required"
-                        size="25" tabindex="1" type="text" placeholder="请输入文章小标题">
-                </p>
-                <br>
-                <p class="classification">
-                    <input name="category" type="radio" value="tec" checked=check>最新动态
-                    <input name="category" type="radio" value="no-tec">官方通告
-                </p>
-                <br>
+            <p class="classification">
+                <input name="category" type="radio" value="tec" checked=check>最新动态
+                <input name="category" type="radio" value="no-tec">官方通告
+            </p>
+            <br>
 
-                <div id="editor" style="margin:20px 20% 20px 20%;"></div>
-                <br>
-                <p>
-                    <input id="id_article" name="article" type="hidden" value="1">
-                    <input name="button" type="button" id="button" tabindex="5" value="提交" class="button" />
-                </p>
-            </form>
-        </div>
+            <div id="editor" style="margin:20px 20% 20px 20%;"></div>
+            <br>
+            <p>
+                <input id="id_article" name="article" type="hidden" value="1">
+                <input name="button" type="button" id="button" tabindex="5" value="提交" class="button"/>
+            </p>
+        </form>
     </div>
+</div>
 
-    <div class="ftWrap">
-        <div class="foot">
-            <div class="cent">
-                <div class="relate">
-                    <div class="items">
-                        <div class="tit"><i class="icon-angle-right"></i>关于我们</div>
-                        <div class="con"> <a href="#">了解我们</a><a href="#">行政团队</a><a href="#">教师团队</a><a
-                                href="#">联系我们</a> </div>
+<div class="ftWrap">
+    <div class="foot">
+        <div class="cent">
+            <div class="relate">
+                <div class="items">
+                    <div class="tit"><i class="icon-angle-right"></i>关于我们</div>
+                    <div class="con"><a href="#">了解我们</a><a href="#">行政团队</a><a href="#">教师团队</a><a
+                            href="#">联系我们</a></div>
+                </div>
+                <div class="items">
+                    <div class="tit"><i class="icon-angle-right"></i>办园目标</div>
+                    <div class="con"><a href="#">促进幼儿快乐成长</a><a href="#">健康成长</a><a href="#">和谐发展</a><a
+                            href="#">构建特色示范园</a>
                     </div>
-                    <div class="items">
-                        <div class="tit"><i class="icon-angle-right"></i>办园目标</div>
-                        <div class="con"><a href="#">促进幼儿快乐成长</a><a href="#">健康成长</a><a href="#">和谐发展</a><a
-                                href="#">构建特色示范园</a>
-                        </div>
+                </div>
+                <div class="items">
+                    <div class="tit"><i class="icon-angle-right"></i>办园理念</div>
+                    <div class="con"><a href="#">启迪智慧</a><a href="#">陶冶心灵</a><a href="#">培养兴趣</a><a
+                            href="#">健康成长</a>
                     </div>
-                    <div class="items">
-                        <div class="tit"><i class="icon-angle-right"></i>办园理念</div>
-                        <div class="con"> <a href="#">启迪智慧</a><a href="#">陶冶心灵</a><a href="#">培养兴趣</a><a
-                                href="#">健康成长</a>
-                        </div>
 
+                </div>
+                <div class="items">
+                    <div class="tit"><i class="icon-angle-right"></i>金果果精神</div>
+                    <div class="con"><a href="#">奉献</a> <a href="#">进取</a> <a href="#">创新</a><a href="#">育人</a>
                     </div>
-                    <div class="items">
-                        <div class="tit"><i class="icon-angle-right"></i>金果果精神</div>
-                        <div class="con"> <a href="#">奉献</a> <a href="#">进取</a> <a href="#">创新</a><a href="#">育人</a>
-                        </div>
-                    </div>
-                    <div class="items last">
-                        <div class="tel">
-                            <h1>3828189</h1>
-                            <p>周一至周日 8:00-18:00</p>
-                            <a href="#" class="kf"><i class="kf-icon"></i>在线客服</a>
-                        </div>
+                </div>
+                <div class="items last">
+                    <div class="tel">
+                        <h1>3828189</h1>
+                        <p>周一至周日 8:00-18:00</p>
+                        <a href="#" class="kf"><i class="kf-icon"></i>在线客服</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="copyright">
-            <div class="cent">
-                <div class="copy-txt">
-                    <div class="copy-menu"><a href="#">问题反馈</a><a href="#">帮助中心</a><a href="#">官方电话</a><a
-                            href="#">官方微信</a></div>
-                    <p>Copyright © 2015 - 2016 EGC. All Rights Reserved</p>
-                </div>
+    </div>
+    <div class="copyright">
+        <div class="cent">
+            <div class="copy-txt">
+                <div class="copy-menu"><a href="#">问题反馈</a><a href="#">帮助中心</a><a href="#">官方电话</a><a
+                        href="#">官方微信</a></div>
+                <p>Copyright © 2015 - 2016 EGC. All Rights Reserved</p>
             </div>
         </div>
     </div>
+</div>
 
-    <script>
+<script>
         var token = window.localStorage.getItem('dn_token');
         var username = window.localStorage.getItem('dn_user');
         var get_data = { 'token': token, 'username': username }
@@ -196,8 +198,45 @@
         ]
         editor.create()
 
+            $('#button').on('click', function(){
 
-    </script>
+                  var content = editor.txt.html()
+                  var content_text = editor.txt.text()
+                  var title = $('.title').val()
+		  		  var little_title = $('.little_title').text(title).html()
+                  var post_data = {'content': content, 'content_text':content_text,'title':title, 'little_title':little_title}
+
+                  $.ajax({
+                  type:"post",
+                  contentType:"application/json",
+                  dataType:"json",
+                  url:"http://127.0.0.1:8000/v1/article/" + username,
+                  data:JSON.stringify(post_data),
+                  beforeSend: function(request) {
+                    request.setRequestHeader("Authorization", token);
+                  },
+                  success:function (result) {
+                      if (200 == result.code){
+                          alert("发布成功")
+                          location.href='http://127.0.0.1:5000/index'
+
+                      }else{
+                          alert(result.error)
+                      }
+                   }
+                 })
+            })
+
+          }else{
+
+              alert(result.error)
+          }
+       }
+    });
+
+
+
+</script>
 </body>
 
 </html>

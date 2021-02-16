@@ -2,7 +2,10 @@ import json
 from django.http import JsonResponse
 from django.utils.decorators import method_decorator
 from django.views import View
+
+from present.models import Present
 from tools.logging_dec import logging_check
+
 
 # 异常码 10300-10399
 
@@ -29,6 +32,7 @@ class PresentViews(View):
         else:
             coin = coin - price * shopcount
             user.coin = coin
+            Present.objects.create(shopname=shopname, price=price, buyer=user)
             user.save()
             result = {'code': 200}
             return JsonResponse(result)
