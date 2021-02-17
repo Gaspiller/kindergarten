@@ -39,8 +39,8 @@ def show():
     return send_file('templates/show.html')
 
 
-@app.route('/<username>/write')
-def write(username):
+@app.route('/write')
+def write():
     # 首页
     return send_file('templates/write.html')
 

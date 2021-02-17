@@ -9,6 +9,8 @@ class Article(models.Model):
     content = models.CharField(max_length=3000, verbose_name='正文')
     created_time = models.DateTimeField(auto_now_add=True)
     updated_time = models.DateTimeField(auto_now=True)
-    author = models.ForeignKey(UserProfile, on_delete=models.CASCADE,default='')
+    author = models.ForeignKey(UserProfile, on_delete=models.CASCADE, default='')
+    category = models.CharField(max_length=20, verbose_name='文章分类', default='')
+
     class Meta:
         db_table = 'article_article'

@@ -61,7 +61,7 @@
             <li><a href="http://127.0.0.1:5000/index">首页</a></li>
             <li><a href="http://127.0.0.1:5000/present">礼物兑换</a></li>
             <li><a href="http://127.0.0.1:5000/show">成果展示</a></li>
-            <li><a href="http://127.0.0.1:5000/write">文章发表</a></li>
+            <li><a href="http://127.0.0.1:5000/<username>/write">文章发表</a></li>
             <li><a href="http://127.0.0.1:5000/connect">联系我们</a></li>
             <li><a href="http://127.0.0.1:5000/about">关于我们</a></li>
         </ul>
@@ -86,8 +86,8 @@
             </p>
             <br>
             <p class="classification">
-                <input name="category" type="radio" value="tec" checked=check>最新动态
-                <input name="category" type="radio" value="no-tec">官方通告
+                <input name="category" type="radio" value="news" checked=check>最新动态
+                <input name="category" type="radio" value="official">官方通告
             </p>
             <br>
 
@@ -204,7 +204,8 @@
                   var content_text = editor.txt.text()
                   var title = $('.title').val()
 		  		  var little_title = $('.little_title').text(title).html()
-                  var post_data = {'content': content, 'content_text':content_text,'title':title, 'little_title':little_title}
+                  var category = $("input[name='category']:checked").val()
+                  var post_data = {'content': content, 'content_text':content_text,'title':title, 'little_title':little_title,'category':caategory}
 
                   $.ajax({
                   type:"post",

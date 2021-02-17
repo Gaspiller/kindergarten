@@ -21,7 +21,8 @@ class ArticleViews(View):
         title = json_obj['title']
         content = json_obj['content']
         little_title = json_obj['little_title']
-        Article.objects.create(title=title, content=content, username=username,little_title=little_title)
-        self.clear_topics_caches(request)
+        category = json_obj['category']
+        Article.objects.create(title=title, content=content, username=username, little_title=little_title,
+                               category=category)
 
         return JsonResponse({'code': 200})
