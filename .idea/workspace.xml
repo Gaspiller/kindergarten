@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65c0def9-78de-404d-af31-5fe18fc57baa" name="Default Changelist" comment="" />
+    <list default="true" id="65c0def9-78de-404d-af31-5fe18fc57baa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/kindergarten_be/kindergarten_be/celery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/article/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_be/article/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/kindergarten_be/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_be/kindergarten_be/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/user/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_be/user/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten_be/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/kindergarten_be/user/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -219,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613545939438</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="sms">
+      <created>1613620740877</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1613620740877</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -245,14 +259,19 @@
     <MESSAGE value="identity" />
     <MESSAGE value="present.html" />
     <MESSAGE value="article" />
-    <option name="LAST_COMMIT_MESSAGE" value="article" />
+    <MESSAGE value="sms" />
+    <option name="LAST_COMMIT_MESSAGE" value="sms" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="61" width="871" height="828" key="CommitChangelistDialog2" timestamp="1613545938978">
+    <state x="587" y="137" width="800" height="677" key="#Notifications" timestamp="1613620980574">
+      <screen x="67" y="27" width="1851" height="899" />
+    </state>
+    <state x="587" y="137" width="800" height="677" key="#Notifications/67.27.1851.899@67.27.1851.899" timestamp="1613620980574" />
+    <state x="552" y="61" width="871" height="828" key="CommitChangelistDialog2" timestamp="1613620740520">
       <screen x="67" y="27" width="1851" height="899" />
     </state>
     <state x="551" y="61" width="871" height="828" key="CommitChangelistDialog2/67.27.1847.895@67.27.1847.895" timestamp="1612179482175" />
-    <state x="552" y="61" width="871" height="828" key="CommitChangelistDialog2/67.27.1851.899@67.27.1851.899" timestamp="1613545938978" />
+    <state x="552" y="61" width="871" height="828" key="CommitChangelistDialog2/67.27.1851.899@67.27.1851.899" timestamp="1613620740520" />
     <state x="716" y="233" key="FileChooserDialogImpl" timestamp="1611679003046">
       <screen x="67" y="27" width="1851" height="899" />
     </state>
@@ -285,10 +304,10 @@
       <screen x="67" y="27" width="1851" height="899" />
     </state>
     <state x="511" y="110" key="SettingsEditor/67.27.1851.899@67.27.1851.899" timestamp="1611808413358" />
-    <state x="587" y="210" width="800" height="530" key="Vcs.Push.Dialog.v2" timestamp="1611817715706">
+    <state x="587" y="210" width="800" height="530" key="Vcs.Push.Dialog.v2" timestamp="1613620790277">
       <screen x="67" y="27" width="1851" height="899" />
     </state>
-    <state x="587" y="210" width="800" height="530" key="Vcs.Push.Dialog.v2/67.27.1851.899@67.27.1851.899" timestamp="1611817715706" />
+    <state x="587" y="210" width="800" height="530" key="Vcs.Push.Dialog.v2/67.27.1851.899@67.27.1851.899" timestamp="1613620790277" />
     <state x="708" y="392" width="569" height="166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611813948660">
       <screen x="67" y="27" width="1851" height="899" />
     </state>

@@ -2,7 +2,6 @@ import json
 from django.http import JsonResponse
 from django.views import View
 from django.utils.decorators import method_decorator
-
 from article.models import Article
 from tools.logging_dec import logging_check
 

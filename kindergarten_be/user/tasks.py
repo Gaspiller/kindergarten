@@ -13,3 +13,4 @@ def send_sms(phone, code):
     yun = YunTongXin(**config)
     res = yun.run(phone, code)
     return res
+

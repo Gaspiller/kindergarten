@@ -99,6 +99,5 @@ class UserViews(View):
             result = {'code': 10107, 'error': 'The code is already'}
             return JsonResponse(result)
         cache.set(cache_key, code, 180)
-        # selery方法
         send_sms.delay(phone, code)
         return JsonResponse({'code': 200})
