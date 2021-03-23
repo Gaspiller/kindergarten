@@ -84,20 +84,21 @@ class UserViews(View):
         user.save()
         return JsonResponse({'code': 200})
 
-    def sms_view(request):
-        if request.method != 'POST':
-            result = {'code': 10105, 'error': 'please use POST'}
-            return JsonResponse(result)
 
-        json_str = request.body
-        json_obj = json.loads(json_str)
-        phone = json_obj['phone']
-        code = random.randint(1000, 9999)
-        cache_key = 'sms_%s' % (phone)
-        old_code = cache.get(cache_key)
-        if old_code:
-            result = {'code': 10107, 'error': 'The code is already'}
-            return JsonResponse(result)
-        cache.set(cache_key, code, 180)
-        send_sms.delay(phone, code)
-        return JsonResponse({'code': 200})
+def sms_view(request):
+    if request.method != 'POST':
+        result = {'code': 10105, 'error': 'please use POST'}
+        return JsonResponse(result)
+
+    json_str = request.body
+    json_obj = json.loads(json_str)
+    phone = json_obj['phone']
+    code = random.randint(1000, 9999)
+    cache_key = 'sms_%s' % (phone)
+    old_code = cache.get(cache_key)
+    if old_code:
+        result = {'code': 10107, 'error': 'The code is already'}
+        return JsonResponse(result)
+    cache.set(cache_key, code, 180)
+    send_sms.delay(phone, code)
+    return JsonResponse({'code': 200})
